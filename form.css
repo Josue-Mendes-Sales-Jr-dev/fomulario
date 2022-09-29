@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100vh;
+    background: linear-gradient(90deg,rgb(13, 13, 161),
+     rgb(255, 82, 111));
+     
+    
+}
+.container{  
+      margin-top: 1rem;
+      background-color: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) ;
+      width: 400px;
+      max-width: 100%;
+      overflow: hidden;
+}
+
+.header{
+    background-color: rgba(204, 18, 204, 0.667) ;
+    padding: 15px;
+    text-align: center;
+}
+
+.form{
+    padding: 20px;
+}
+.control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.control label{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+.control input{
+    margin: 10px auto;
+    border: 2px solid #fafa;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 95%;
+    padding: 10px;
+    
+}
+.control i{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    visibility:hidden;
+}
+
+.control small{
+    padding: 10px;
+    color: red;
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    visibility: hidden ;
+}
+
+#btn{
+    display: block;
+    border-radius: 10px;
+    border: 1px solid#fafa;
+    margin: 5px auto;
+    width: 95%;
+    background-color: rgba(204, 18, 204, 0.667) ;
+    padding: 10px;
+    font-size: 20px;
+
+}
+#btn:hover{
+    cursor: pointer;
+    border:rgba(204, 18, 204, 0.667) ;
+    background-color:#fafa ;
+}
+
+.control.success input{
+    border-color: rgb(0, 255, 98);
+
+}
+.control.success i{
+    visibility: visible;
+    color: rgb(0, 255, 98);
+}
+
+.control.error input{
+    border-color: red;
+}
+
+.control.error i{
+    visibility: visible;
+    color: red;
+}
+
+.control.error small{
+    visibility: visible;
+}
